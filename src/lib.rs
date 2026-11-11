@@ -180,6 +180,7 @@ fn generate_streams_recursive(
 }
 
 pub fn generate_tilestion_tm(
+    version: String,
     meta: o::Metadata,
     rustdoc_json: String,
     def_paths: Vec<String>,
@@ -203,7 +204,7 @@ pub fn generate_tilestion_tm(
 
     let out = o::Base {
         format_version: FORMAT_VERSION,
-        version: meta.version,
+        version,
         generated_at,
         source: meta.source,
         providers: vec![meta.provider],

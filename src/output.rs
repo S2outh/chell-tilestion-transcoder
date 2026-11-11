@@ -18,7 +18,6 @@ pub struct TypeMetadata {
 
 #[derive(Deserialize)]
 pub struct Metadata {
-    pub version: String,
     pub source: String,
     pub provider: Provider,
     pub stream_metadata: StreamMetadata,
